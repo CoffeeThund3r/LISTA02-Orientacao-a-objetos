@@ -1,0 +1,29 @@
+namespace exercicio06
+{
+    //6. Escreva um programa em C# que o usuário deve inserir as idades de uma quantidade
+    //de pessoas e quando inserir 0 o programa deixa de pedir valores e exibe a média de todos as idades digitadas.
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int y = 0, x, soma = 0, media = 0;
+
+            do
+            {
+                Console.WriteLine("Digite a idade");
+                x = int.Parse(Console.ReadLine());
+                if (x != 0)
+                {
+                    soma = soma + x;
+                    y++;
+                }
+            }
+            while (x != 0);
+            media = soma / y;
+            Console.WriteLine("A média das idades é: " + media);
+            Console.ReadKey();
+
+        }
+    }
+}
