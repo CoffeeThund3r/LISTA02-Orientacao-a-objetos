@@ -1,0 +1,43 @@
+namespace exercicio04
+{
+    class Program
+    {
+        // 4. Escreva um programa em C# que calcule a média aritimética de n notas de um aluno.
+
+        static void Main(string[] args)
+        {
+            double nota1, nota2, nota3, nota4;
+            double media;
+            double soma;
+
+            Console.WriteLine("Digite a primeira nota: ");
+            nota1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a segunda nota: ");
+            nota2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a terceira nota: ");
+            nota3 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a quarta nota: ");
+            nota4 = Convert.ToDouble(Console.ReadLine());
+
+            soma = nota1 + nota2 + nota3 + nota4;
+            media = soma / 4;
+
+            Console.WriteLine("A média das notas: {0} , {1} , {2} , {3} é: {2}", nota1, nota2, nota3, nota4, media);
+
+
+            if (media >= 6)
+            {
+                Console.WriteLine("o aluno foi APROVADO.");
+            }
+            else
+            {
+                Console.WriteLine("aluno REPROVADO");
+            }
+
+            Console.ReadKey();
+
+
+
+        }
+    }
+}
